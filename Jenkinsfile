@@ -1,4 +1,6 @@
 node{
+    stage('environment'){
+        PATH = "/opt/maven/bin/mvn:$PATH"
     stage('Git Clone'){
         git 'https://github.com/anandaiahkoppala/calcwebapp.git'
     }
